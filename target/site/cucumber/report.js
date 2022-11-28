@@ -372,7 +372,8 @@ formatter.match({
   "location": "LoginCarambarSteps.i_type_userName(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cinput name\u003d\"email\" type\u003d\"email\" value\u003d\"\" required\u003d\"\"\u003e is not clickable at point (510, 24). Other element would receive the click: \u003cul\u003e...\u003c/ul\u003e\n  (Session info: chrome\u003d107.0.5304.107)\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027PCOFOB\u0027, ip: \u0027172.21.160.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.17\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a231b8b6be17a1cc902eb6dcd2c8d3b3, clickElement {id\u003d93811def-26fc-4e3a-a778-4743451c9a05}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\PRECIS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58651/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (a231b8b6be17a1cc902eb6dcd2c8d3b3)] -\u003e name: email]\nSession ID: a231b8b6be17a1cc902eb6dcd2c8d3b3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\r\n\tat page_objects.Page_authenticate.findAndClearUserName(Page_authenticate.java:21)\r\n\tat page_objects.Page_authenticate.typeUsername(Page_authenticate.java:32)\r\n\tat steps_definition.LoginCarambarSteps.i_type_userName(LoginCarambarSteps.java:35)\r\n\tat ✽.I type userName \"omartest.false@yopmail.com\"(src/test/resources/features/carambar.feature:25)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I type password \"Qwerty123@\"",
@@ -382,7 +383,7 @@ formatter.match({
   "location": "LoginCarambarSteps.i_type_password(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I click the button login",
@@ -392,7 +393,7 @@ formatter.match({
   "location": "LoginCarambarSteps.i_click_the_button_login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "The error message \"Échec d\u0027authentification\" is displayed",
@@ -402,7 +403,7 @@ formatter.match({
   "location": "LoginCarambarSteps.the_error_message_is_displayed(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
   "status": "passed"
