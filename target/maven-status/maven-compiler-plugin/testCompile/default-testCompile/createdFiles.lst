@@ -1,0 +1,6 @@
+page_objects\Page_authenticate.class
+utils\ReadProperty.class
+modules\RunCucumberTest.class
+utils\CarambarCommun.class
+steps_definition\LoginCarambarSteps.class
+modules\Hooks.class
