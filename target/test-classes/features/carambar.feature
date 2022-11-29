@@ -4,7 +4,7 @@ Feature: Authentification
   As a user, I want to connect to carambar&co Applicaion
 
   @Happy-path
-  Scenario Outline: Authenticate with correct credentials (correct login and correct password)
+  Scenario Outline: Authenticate with correct credentials (verify welcome connexion message in account page)
     Given User open the browser "<browser>" on carambar homePage
     And User navigate to the authentification Form
     When I type userName "<login>"
