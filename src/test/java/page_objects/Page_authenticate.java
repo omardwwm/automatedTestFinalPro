@@ -52,6 +52,7 @@ public class Page_authenticate {
 			assertEquals("Mon compte", driver.findElement(AccountPageLinkLocator).getText());
 		} catch (Error e) {
 			System.out.println(e.toString()); 
+			throw(e);
 		}
 	}
 	
@@ -59,7 +60,8 @@ public class Page_authenticate {
 		try {
 			assertEquals(welcomeMessage, driver.findElement(msgWelcomeAccountLocator).getText());
 		} catch (Error e) {
-			System.out.println(e.toString()); 
+			System.out.println(e.toString());
+			throw(e);
 		}
 	}
 	 

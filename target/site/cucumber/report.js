@@ -40,7 +40,7 @@ formatter.step({
 });
 formatter.step({
   "name": "The welcome message \"\u003cwelcomeLoginMsg\u003e\" is displayed on account page",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -60,7 +60,7 @@ formatter.examples({
         "chrome",
         "omartest@yopmail.com",
         "Qwerty123@",
-        "Salut Omar !"
+        "Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts"
       ]
     },
     {
@@ -68,7 +68,7 @@ formatter.examples({
         "firefox",
         "omartest@yopmail.com",
         "Qwerty123@",
-        "Salut Omar !"
+        "Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts"
       ]
     }
   ]
@@ -147,14 +147,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The welcome message \"Salut Omar !\" is displayed on account page",
-  "keyword": "And "
+  "name": "The welcome message \"Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\" is displayed on account page",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "LoginCarambarSteps.the_welcome_message_is_displayed_on_account_page(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.opentest4j.AssertionFailedError: expected: \u003cBonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\u003e but was: \u003cSalut Omar !\u003e\r\n\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)\r\n\tat org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)\r\n\tat org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)\r\n\tat page_objects.Page_authenticate.checkWelcomeMsgAccountPage(Page_authenticate.java:60)\r\n\tat steps_definition.LoginCarambarSteps.the_welcome_message_is_displayed_on_account_page(LoginCarambarSteps.java:67)\r\n\tat ✽.The welcome message \"Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\" is displayed on account page(src/test/resources/features/carambar.feature:14)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"
@@ -233,14 +234,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The welcome message \"Salut Omar !\" is displayed on account page",
-  "keyword": "And "
+  "name": "The welcome message \"Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\" is displayed on account page",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "LoginCarambarSteps.the_welcome_message_is_displayed_on_account_page(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.opentest4j.AssertionFailedError: expected: \u003cBonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\u003e but was: \u003cSalut Omar !\u003e\r\n\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)\r\n\tat org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)\r\n\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)\r\n\tat org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)\r\n\tat page_objects.Page_authenticate.checkWelcomeMsgAccountPage(Page_authenticate.java:60)\r\n\tat steps_definition.LoginCarambarSteps.the_welcome_message_is_displayed_on_account_page(LoginCarambarSteps.java:67)\r\n\tat ✽.The welcome message \"Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts\" is displayed on account page(src/test/resources/features/carambar.feature:14)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"

@@ -11,12 +11,12 @@ Feature: Authentification
     And I type password "<password>"
     And I click the button login
     Then The page myAccount is open
-    And The welcome message "<welcomeLoginMsg>" is displayed on account page
+    Then The welcome message "<welcomeLoginMsg>" is displayed on account page
 
     Examples: 
-      | browser | login                | password   | welcomeLoginMsg |
-      | chrome  | omartest@yopmail.com | Qwerty123@ | Salut Omar !    |
-      | firefox | omartest@yopmail.com | Qwerty123@ | Salut Omar !    |
+      | browser | login                | password   | welcomeLoginMsg                                                                                                    |
+      | chrome  | omartest@yopmail.com | Qwerty123@ | Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts |
+      | firefox | omartest@yopmail.com | Qwerty123@ | Bonjour test Omar heureux de vous retrouver! N’hésitez pas à regarder nos nouveauté, il y en a pour tous les gouts |
 
   @Sad-path
   Scenario Outline: Authenticate with "<field-case>"
